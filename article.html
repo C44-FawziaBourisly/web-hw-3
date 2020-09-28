@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/icon2.png" />
+    <title>FleXit</title>
+  </head>
+  <body class="video-body">
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img class="logo" src="./images/FleXit.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <div class="search-bar">
+              <input
+                class="search-text"
+                type="text"
+                name=""
+                placeholder="Search"
+              />
+              <a class="search-btn" href="#">
+                <img src="./images/search-icon.png" alt="search icon" />
+              </a>
+            </div>
+          </li>
+          <li><h3 class="sign-in">Sign in</h3></li>
+          <img class="user-img" src="./images/user-icon.png" alt="" />
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="h1-article">Basic concepts of flexbox</h1>
+
+    <div class="bigger-container">
+      <div class="bx-container">
+        <div class="bx"></div>
+        <span class="p"> = Parent Elemant (container)</span>
+      </div>
+      <div class="bx-container">
+        <div class="bx bx1"></div>
+        <span class="p p1"> = Child Elemant (box)</span>
+      </div>
+    </div>
+    <!--------------------- column1 ---------------->
+    <div class="biggest-div">
+      <div class="big-div">
+        <!--------------------- column1 ---------------->
+        <div class="div-container">
+          <div class="css-tittle">Flex Container</div>
+          <div class="boxes">
+            <img
+              class="box-img"
+              width="300px"
+              height="80px"
+              src="./images/bx.png"
+              alt=""
+            />
+            <h2 class="example">Example</h2>
+            <div class="code">
+              <code markup="tt" class="code-bg">
+                <span>
+                  <span class="class-name"
+                    >.container { <br />display: flex;<br />}
+                  </span>
+                </span>
+              </code>
+            </div>
+          </div>
+        </div>
+
+        <div class="div-container1">
+          <div class="css-tittle">Flex-direction</div>
+          <div class="boxes">
+            <div class="img-box">
+              <div class="i1">
+                <img class="box-img1" src="./images/row.png" alt="" />
+                <img class="box-img1" src="./images/row-reverse.png" alt="" />
+              </div>
+              <div class="i">
+                <img class="box-img2" src="./images/column.png" alt="" />
+                <img
+                  class="box-img2"
+                  src="./images/column-reverse.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h2 class="example">Example</h2>
+            <div class="code">
+              <code markup="tt" class="code-bg">
+                <span>
+                  <span class="class-name"
+                    >.container { <br />flex-direction: row | row-reverse |
+                    column | column-reverse;<br />}
+                  </span>
+                </span>
+              </code>
+            </div>
+          </div>
+        </div>
+
+        <div class="div-container2">
+          <div class="css-tittle">Flex-wrap</div>
+          <div class="boxes">
+            <img class="box-img3" src="./images/wrap.png" alt="" />
+            <h2 class="example">Example</h2>
+            <div class="code">
+              <code markup="tt" class="code-bg">
+                <span>
+                  <span class="class-name"
+                    >.container { <br />
+                    flex-wrap: nowrap | wrap | wrap-reverse;<br />}
+                  </span>
+                </span>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------column2----------- -->
+
+      <div>
+        <div class="div-container3">
+          <div class="css-tittle">Justify-content</div>
+          <div class="boxes">
+            <div class="b">
+              <h3>Flex-start</h3>
+              <img class="box-img4" src="./images/flex-start.png" alt="" />
+              <h3>flex-end</h3>
+              <img class="box-img4" src="./images/flex-end.png" alt="" />
+              <h3>center</h3>
+              <img class="box-img4" src="./images/center.png" alt="" />
+              <h3>space-between</h3>
+              <img class="box-img4" src="./images/space-between.png" alt="" />
+              <h3>space-around</h3>
+              <img class="box-img4" src="./images/space-around.png" alt="" />
+              <h3>space-evenly</h3>
+              <img class="box-img4" src="./images/space-evenly.png" alt="" />
+            </div>
+            <h2 class="example">Example</h2>
+            <div class="code">
+              <code markup="tt" class="code-bg">
+                <span>
+                  <span class="class-name"
+                    >.container { <br />
+                    justify-content: flex-start | flex-end | center |
+                    space-between | space-around | space-evenly;<br />}
+                  </span>
+                </span>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------column2----------- -->
+
+      <!-- ------------column3------------------- -->
+
+      <div>
+        <div class="div-container4">
+          <div class="css-tittle">Align-items</div>
+          <div class="boxes">
+            <div class="b">
+              <h3>Flex-start</h3>
+              <img class="box-img5" src="./images/flex-start1.png" alt="" />
+              <h3>flex-end</h3>
+              <img class="box-img5" src="./images/flex-end1.png" alt="" />
+              <h3>center</h3>
+              <img class="box-img5" src="./images/center1.png" alt="" />
+              <h3>stretch</h3>
+              <img class="box-img5" src="./images/stretch.png" alt="" />
+              <h3>baseline</h3>
+              <img class="box-img5" src="./images/baseline.png" alt="" />
+            </div>
+            <h2 class="example">Example</h2>
+            <div class="code">
+              <code markup="tt" class="code-bg">
+                <span>
+                  <span class="class-name"
+                    >.container { <br />
+                    align-items: stretch | flex-start | flex-end | center |
+                    baseline;<br />}
+                  </span>
+                </span>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------column4--------- -->
+
+      <div>
+        <div class="div-container5">
+          <div class="css-tittle">Align-content</div>
+          <div class="boxes">
+            <div class="b">
+              <h3>Flex-start</h3>
+              <img class="box-img6" src="./images/flex-start3.png" alt="" />
+              <h3>flex-end</h3>
+              <img class="box-img6" src="./images/flex-end3.png" alt="" />
+              <h3>center</h3>
+              <img class="box-img6" src="./images/center3.png" alt="" />
+              <h3>stretch</h3>
+              <img class="box-img6" src="./images/stretch3.png" alt="" />
+              <h3>space-between</h3>
+              <img class="box-img6" src="./images/space-between3.png" alt="" />
+              <h3>space-around</h3>
+              <img class="box-img6" src="./images/space-around3.png" alt="" />
+            </div>
+            <h2 class="example">Example</h2>
+            <div class="code">
+              <code markup="tt" class="code-bg">
+                <span>
+                  <span class="class-name"
+                    >.container { <br />
+                    align-content: flex-start | flex-end | center |
+                    space-between | space-around | stretch;<br />}
+                  </span>
+                </span>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="f">
+      <div class="footer">
+        <img class="footerlogo" src="./images/FleXit.png" alt="" />
+        <ul class="footerul">
+          <li>
+            <a href="https://www.instagram.com/joincoded/?hl=en">
+              <img
+                width="40px"
+                height="40px"
+                src="./images/instagram.svg"
+                alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/C44-FawziaBourisly">
+              <img
+                width="40px"
+                height="40px"
+                src="./images/github.svg"
+                alt="github"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/joincoded"
+              ><img
+                width="40px"
+                height="40px"
+                src="./images/twitter (1).svg"
+                alt="twitter"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
