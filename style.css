@@ -62,6 +62,7 @@ nav ul {
 }
 
 .search-btn {
+  background: url("./images/search-btn.png");
   color: #2c2727;
   float: right;
   border-radius: 50%;
@@ -159,7 +160,6 @@ nav ul {
 .iframe-container {
   display: flex;
   justify-content: center;
-
   padding-top: 60px;
   padding-bottom: 90px;
   padding-right: 30px;
@@ -471,3 +471,5 @@ footer {
   margin-left: 60px;
   padding-right: 850px;
 }
+
+/*      media quaries      */
